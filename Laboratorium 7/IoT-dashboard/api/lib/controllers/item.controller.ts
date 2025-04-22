@@ -20,7 +20,6 @@ class ItemController implements Controller {
         this.router.get(`${this.path}/:id`, this.getItemById);
         this.router.put(`${this.path}/:id`, this.updateItem);
         this.router.delete(`${this.path}/:id`, this.deleteItem);
-
         this.router.post('/sensor-data', this.postSensorData);
     }
 
